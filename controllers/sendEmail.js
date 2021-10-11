@@ -12,7 +12,7 @@ const sendEmail = async (req, res) => {
   });
 
   const { email } = req.body;
-  console.log(req.body);
+  // console.log(req.body);
   let info = await transporter.sendMail({
     from: email.from,
     to: email.to,
